@@ -80,9 +80,15 @@ input[type="text"], input[type="number"]{
 }
 .row{ display:flex; gap:10px; flex-wrap: wrap; align-items:center; }
 
+/* 1. Aumentar escrita */
+#texto-crescente{
+  font-size: 16px;
+  transition: font-size 0.15s ease;
+  margin: 0 0 14px;
+}
+
 footer{
   margin-top: 44px;
   color: var(--ink-soft);
   font-size: 12.5px;
 }
-/*as funcioinalidades serão adicionadas aqui, uma por branch*/
