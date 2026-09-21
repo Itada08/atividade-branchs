@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caixa de Funcionalidades</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">exercício de branches — 6 funcionalidades</div>
+    <h1>Caixa de Funcionalidades</h1>
+  </header>
+
+  <!-- Funcionalidade 1 -->
+  <section class="card" id="func-aumentar-escrita">
+    <h2><span class="num">01</span>Aumentar a escrita com um botão</h2>
+    <p id="texto-crescente">Este texto vai crescer a cada clique.</p>
+    <button id="btn-aumentar">Aumentar texto</button>
+  </section>
+
+  <!-- Funcionalidade 2 -->
+  <section class="card" id="func-tabela">
+    <h2><span class="num">02</span>Criar uma tabela com os dados do input</h2>
+    <div class="row">
+      <input type="text" id="input-nome-tabela" placeholder="Nome">
+      <input type="text" id="input-info-tabela" placeholder="Informação">
+      <button id="btn-add-tabela">Adicionar à tabela</button>
+    </div>
+    <p id="tabela-vazia">Nenhum dado adicionado ainda.</p>
+    <table id="tabela-dados" hidden>
+      <thead><tr><th>Nome</th><th>Informação</th></tr></thead>
+      <tbody id="tabela-corpo"></tbody>
+    </table>
+  </section>
+
+  <!-- Funcionalidade 3 -->
+  <section class="card" id="func-nomes-aleatorios">
+    <h2><span class="num">03</span>Criar nomes aleatórios</h2>
+    <p id="nome-resultado">—</p>
+    <button id="btn-nome-aleatorio">Gerar nome</button>
+  </section>
+
+  <!-- Funcionalidade 4 -->
+  <section class="card" id="func-sorteio-numero">
+    <h2><span class="num">04</span>Sortear números aleatórios de 0 a 100</h2>
+    <p id="numero-resultado">—</p>
+    <button id="btn-sortear-numero">Sortear número</button>
+  </section>
+
+  <!-- Funcionalidade 5 -->
+  <section class="card" id="func-cor-nome">
+    <h2><span class="num">05</span>Mudar a cor do nome</h2>
+    <p class="hint">Digite um nome e escolha uma cor.</p>
+    <div class="row" style="margin-bottom:14px;">
+      <input type="text" id="input-nome-cor" placeholder="Digite um nome" value="Chico">
+      <button id="btn-atualizar-nome-cor">Atualizar nome</button>
+    </div>
+    <p id="nome-colorido">Chico</p>
+    <div class="swatches">
+      <button class="swatch" style="background:#0F6E5C" data-cor="#0F6E5C" aria-label="Verde"></button>
+      <button class="swatch" style="background:#B4461E" data-cor="#B4461E" aria-label="Laranja"></button>
+      <button class="swatch" style="background:#2453A6" data-cor="#2453A6" aria-label="Azul"></button>
+      <button class="swatch" style="background:#8A3FBF" data-cor="#8A3FBF" aria-label="Roxo"></button>
+      <button class="swatch" style="background:#16181D" data-cor="#16181D" aria-label="Preto"></button>
+    </div>
+  </section>
+
+  <!-- Funcionalidade 6 -->
+  <section class="card" id="func-inverter-palavras">
+    <h2><span class="num">06</span>Inverter palavras</h2>
+    <div class="row">
+      <input type="text" id="input-inverter" placeholder="Digite uma frase" style="flex:1; min-width:200px;">
+      <button id="btn-inverter">Inverter</button>
+    </div>
+    <p id="inverter-resultado"></p>
+  </section>
+
+  <footer>seis funcionalidades independentes — cada uma pode virar uma branch própria</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
