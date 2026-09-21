@@ -85,4 +85,21 @@ footer{
   color: var(--ink-soft);
   font-size: 12.5px;
 }
-/*as funcioinalidades serão adicionadas aqui, uma por branch*/
+
+/* 5. Cor do nome */
+#nome-colorido{
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 4px 0 14px;
+  min-height: 28px;
+}
+.swatches{ display:flex; gap:8px; margin-bottom: 4px; }
+.swatch{
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  cursor: pointer;
+  padding: 0;
+}
+.swatch:hover{ transform: scale(1.08); }
