@@ -92,3 +92,10 @@ footer{
   color: var(--ink-soft);
   font-size: 12.5px;
 }
+
+
+/* 2. Tabela */
+table{ width:100%; border-collapse: collapse; margin-top: 16px; font-size: 13.5px; }
+th, td{ text-align:left; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th{ color: var(--ink-soft); font-weight: 500; }
+#tabela-vazia{ color: var(--ink-soft); font-size: 13.5px; margin-top: 14px; }
